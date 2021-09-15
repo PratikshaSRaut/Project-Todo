@@ -13,7 +13,7 @@
     <title>Task Management</title>
 </head>
 
-<body>
+<body onload="reloadTaskCard()">
     <!-- Modal -->
 
     <div class="modal fade" id="newCardModal" tabindex="-1" aria-labelledby="newCardModalLabel" aria-hidden="true">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button onclick="addCard()" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save
+                    <button onclick="addCard()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Save
                         changes</button>
                 </div>
             </div>
